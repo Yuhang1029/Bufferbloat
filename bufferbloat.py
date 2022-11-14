@@ -125,7 +125,7 @@ def start_iperf(net):
 
 def start_webserver(net):
     h1 = net.get('h1')
-    proc = h1.popen("python http/webserver.py", shell=True)b
+    proc = h1.popen("python http/webserver.py", shell=True)
     sleep(1)
     return [proc]
 
