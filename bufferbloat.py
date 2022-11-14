@@ -83,6 +83,7 @@ class BBTopo(Topo):
 
         # TODO: Add links with appropriate characteristics
         bw_host = args.bw_host
+        x = 1
 	    bw_net = args.bw_net
         delay = args.delay
         maxq = args.maxq
