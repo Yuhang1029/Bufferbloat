@@ -205,8 +205,8 @@ def bufferbloat():
         h2 = net.get('h2')
         for i in range(3):
             command = 'curl -o /dev/null -s -w %{time_total} ' + h1.IP() + '/http/index.html'
-            fatch_time = h2.popen(command).communicate()[0]
-            time_measurements.append(float(fatch_time))
+            fetch_time = h2.popen(command).communicate()[0]
+            time_measurements.append(float(fetch_time))
             print(fetch_time)
         sleep(1)
 
