@@ -207,7 +207,6 @@ def bufferbloat():
             command = 'curl -o /dev/null -s -w %{time_total} ' + h1.IP() + '/http/index.html'
             fetch_time = h2.popen(command).communicate()[0]
             time_measurements.append(float(fetch_time))
-            print(fetch_time)
         sleep(1)
 
     # TODO: compute average (and standard deviation) of the fetch
