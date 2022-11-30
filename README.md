@@ -1,4 +1,6 @@
-# Question 1
+# Questions
+
+## Question 1
 
 > Why do you see a difference in webpage fetch times with small and large router buffers?
 
@@ -11,7 +13,7 @@ As we can find from the table above, the average fetch times for 20-packets rout
 
 Also, we know that in order to detecting the capacity of network, hosts will continuously increase the transmission rate until it finds a packet getting lost in the network. Larger buffer means the packets will not be immediately lost or rejected, they are stored in the buffer for later resending, and hosts will detect any problem later than using smaller buffer.  Thus, when the host find some lost of packets and begin to decrease its transmission rate, there are already lots of packets in the buffer and might cause the network unusable for a period of time.
 
-# Question 2
+## Question 2
 
 > Bufferbloat can occur in other places such as your network interface card (NIC). Check the output of *ifconfig eth0* on your VirtualBox VM. What is the (maximum) transmit queue length on the network interface reported by ifconfig? For this queue size and a draining rate of 100 Mbps, what is the maximum time a packet might wait in the queue before it leaves the NIC?
 
@@ -19,7 +21,7 @@ The maximum transmit queue length on the network interface reported by ifconfig 
 
 (1000 packets x 1500 bytes x 8 bits) / 100Mbps = 0.12s
 
-# Question 3
+## Question 3
 
 > How does the RTT reported by ping vary with the queue size? Write a symbolic equation to describe the relation between the two (ignore computation overheads in ping that might affect the final result).
 
@@ -27,7 +29,7 @@ In this exercise we use ping process to find the RTT. Compared the graph of `rtt
 
 All in all, the relationship between RTT and queue size is linear.
 
-# Question 4
+## Question 4
 
 > Identify and describe two ways to mitigate the bufferbloat problem.
 
