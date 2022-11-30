@@ -213,7 +213,7 @@ def bufferbloat():
     # times.  You don't need to plot them.  Just note it in your
     # README and explain.
 
-    with open('%s/output.txt'%(args.dir), 'w') as f:
+    with open('%s/fetch_time.output'%(args.dir), 'w') as f:
         f.write("Average: %.3f\nStandard Deviation: %.3f\n" %(avg(time_measurements), stdev(time_measurements)))
 
     stop_tcpprobe()
