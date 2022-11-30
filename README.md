@@ -4,8 +4,8 @@
 
 |             | average | standard deviation |
 |:-----------:| ------- | ------------------ |
-| 20 packets  | 0.549   | 0.209              |
-| 100 packets | 1.088   | 0.506              |
+| 20 packets  | 0.585   | 0.202              |
+| 100 packets | 1.180   | 0.647              |
 
 As we can find from the table above, the average fetch times for 20-packets router buffer is shorter than that of 100-packets router buffer. This is likely due to the size of buffer. Due to the large size of buffer, it might continue to store as much as possible packets if the network continues to be busy, and thus packets in a larger buffer will have a longer waiting duration. 
 
